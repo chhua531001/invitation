@@ -70,6 +70,7 @@ step 1*/
 
 
 
+
 /*
 .map {
     display: none;
@@ -282,6 +283,7 @@ body {
     /*    setp 9*/
     /*    作出mouse可以點擊的樣子*/
     cursor: pointer;
+
     /*    background: blue;*/
 }
 
@@ -329,6 +331,7 @@ body {
     /*    水平置中*/
     background-position: center center;
 }
+
 
 
 
@@ -424,6 +427,7 @@ body {
     text-align: center;
     color: black;
 }
+
 
 
 
