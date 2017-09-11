@@ -1,0 +1,15 @@
+* {
+    /*    預設是padding-box, 所以要用人工更改為bordeer-box*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /*    預設會留margin, 所以要用人工覆寫預設值*/
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}

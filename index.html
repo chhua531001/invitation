@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- todo favicon -->
+    <!--    .ico圖片大小是16X16-->
+    <!--    step 18-->
+    <link rel="shortcut icon" href="img/invitacion-normal_16.ico">
+    <!-- note normalize.css -->
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- note jQuery -->
+    <script src="js/jquery/3.2.1/jquery.min.js"></script>
+    <!-- note 網頁主程式 -->
+    <!--    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>-->
+    <!--    使用ch.hua@apexlens.com申請的Google Map JavaScript API Key-->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBcgIzsz6qgd7V0RiAFemO6VMVIn3bosoo"></script>
+    <!--
+    <script>
+        // 建立google map api
+        function initMap() {
+            //        物件是大括號
+            var myLocation = {
+
+                lat: 25.0590374,
+                lng: 121.5334559
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLocation,
+                //            把scroll的功能關掉, 否則滑動到地圖時, 會無法往下滑動
+                scrollwheel: false,
+                //            關閉draggable的功能
+                draggable: false,
+                //            //            關閉google map defaule UI的功能
+                //            disableDefaultUI: true,
+                zoom: 20,
+
+            });
+
+            //        標識座標位置
+            var marker = new google.maps.Marker({
+                position: myLocation,
+                //            icon: './img/'
+                map: map
+            });
+        }
+
+        //使用initMap
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+-->
+    <!--    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>-->
+
+    <script src="js/main.js"></script>
+    <title>Invitation Card</title>
+</head>
+
+<body>
+
+    <nav class="nav-list">
+        <li><a class="active" data-target="#page1">76級三年二班 同學會</a></li>
+        <li><a href="pages/page2.html">邀請函</a></li>
+        <li><a href="pages/page3.html">餐廳位置</a></li>
+        <!--<li><a data-target="#page4">Page4</a></li>-->
+    </nav>
+
+    <!--<div class="map" id="map"></div>-->
+
+    <div class="page active" id="page1">
+
+        <h1>76級 三年二班</h1>
+        <h1>畢業30周年同學會</h1>
+        <h1>日期：106年11月18日（六）中午11點30分</h1>
+        <h1>同學會聚會餐廳 : 邊田庄松江旗艦會館</h1>
+        <h1>地址 : 10491台北市中山區松江路237號B1（行天宮2號出口）</h1>
+        <h1>電話 : 02-2501-1068</h1>
+        <!--
+        <h1>Page1</h1>
+        <p>Libero non recusandae sit quam deleniti incidunt totam optio doloremque, cupiditate ullam veritatis ea voluptatum ducimus accusantium dolores illo voluptas molestiae vel explicabo vero maiores esse suscipit. Molestiae, inventore, aliquid.</p>
+-->
+    </div>
+
+    <div class="page" id="page2">
+        <!--
+            <ul class="test">
+                <li>Green onion</li>
+            </ul>
+-->
+        <!--   card-wrapper是為了作透視效果用-->
+        <div class="card-wrapper clicker">
+            <div class="card">
+                <!-- note upper-section -->
+                <header class="upper-section">
+                    <div class="text">
+                        <!--                    <h1 class="dish-name">同學會邀請函</h1>-->
+                        <!--                    <p class="price">420</p>-->
+                    </div>
+                </header>
+                <!-- note lower-section -->
+                <section class="lower-section">
+                    <div class="first">
+                        <p>
+                            三十年有多長？小小樹苗長成雙手環抱的大樹。<br> 三十年有多長？小娃兒已成家，手中又抱了個小娃兒。
+                            <br> 三十年有多長？從有線電話到無線手機，少了那條長長捲捲的黑線，你是不是也忘了那鎖在抽屜中，覆上了淡淡灰塵的通訊錄。
+                            <br><br>
+                        </p>
+                    </div>
+                    <div class="second">
+                        <p>
+
+                            <!--
+                       <span>                        嘿～親愛的同學，畢業三十年了呢！從互道珍重後的那天起，我們踏上了不同的人生軌跡，歷經了一個又一個生命驛站。近來， 年少輕狂的片段總在腦海一閃而過，想你了～我的同學，那一段被擠到記憶底層的時光，慢慢的～慢慢的反噬，緩緩吞吐記憶的煙圈。<br> <br>好快，都五十了呢！彷佛昨日，啦啦隊比賽得獎時，陽光灑落在我們笑容光燦的臉上，全班捨我其誰的囂張得意，軍歌比賽揮汗練習志在必得的雄壯威武。當年的三年二班謙稱第二，誰敢說第一的氣勢是與你們共同用青春織就。時光瞬溯三十載，抖不落游移在腦海中的吉光片羽，青春啊～還是與你們相談最有滋味。
+                        <br> <br>如果你總是不小心一次一次迷糊的錯過，這次請你一定一定珍惜。昔日總是不耐美麗女班導 碎念不停，如今終明瞭可以對著她喊 老師好 是多大的幸福 。想念她誨人不倦 想念她怕教官又心疼我們的模樣嗎？歲月厚待 老汪～美麗優雅依舊 聲若洪鐘，氣拔山河。來看看她好嗎？通往青春之泉的祕密通道。</span>
+                        <smap class="test">10月28日不見不散！</smap>
+-->
+
+                            嘿～親愛的同學，畢業三十年了呢！從互道珍重後的那天起，我們踏上了不同的人生軌跡，歷經了一個又一個生命驛站。近來， 年少輕狂的片段總在腦海一閃而過，想你了～我的同學，那一段被擠到記憶底層的時光，慢慢的～慢慢的反噬，緩緩吞吐記憶的煙圈。<br> <br>好快，都五十了呢！彷佛昨日，啦啦隊比賽得獎時，陽光灑落在我們笑容光燦的臉上，全班捨我其誰的囂張得意，軍歌比賽揮汗練習志在必得的雄壯威武。當年的三年二班謙稱第二，誰敢說第一的氣勢是與你們共同用青春織就。時光瞬溯三十載，抖不落游移在腦海中的吉光片羽，青春啊～還是與你們相談最有滋味。
+                            <br> <br>如果你總是不小心一次一次迷糊的錯過，這次請你一定一定珍惜。昔日總是不耐美麗女班導 碎念不停，如今終明瞭可以對著她喊 老師好 是多大的幸福 。想念她誨人不倦 想念她怕教官又心疼我們的模樣嗎？歲月厚待 老汪～美麗優雅依舊 聲若洪鐘，氣拔山河。來看看她好嗎？通往青春之泉的祕密通道。
+                        </p>
+                    </div>
+
+                    <div class="third">
+                        <p>10月28日不見不散！</p>
+                    </div>
+
+
+                    <!--
+                <h2 class="section-title">Ingredient</h2>
+                <ul class="ingredients">
+                    <li class="done">Salmon</li>
+                    <li class="done">Tomato</li>
+                    <li class="done">Lemon Juice</li>
+                    <li>Mustard Sauce</li>
+                    <li>Green onion</li>
+                    <li class="done">Asparagus</li>
+                    <li>Garlic salt</li>
+                </ul>
+                <small>Grilled Salmon Steaks with Asparagus <br> Dinner from the grill is what summer is all about, the whole family will love this easy and super-healthy meal.</small>
+-->
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="page" id="page3">
+        <div class="map" id="map"></div>
+        <!--        <div id="map"></div>-->
+        <h1>同學會聚會餐廳 : 邊田庄</h1>
+        <h1>地址 : 10491台北市中山區松江路237號</h1>
+        <h1>電話 : 02-2501-1068</h1>
+    </div>
+    <!--
+		<div class="page" id="page4">
+			<h1>Page4</h1>
+			<p>Ipsa asperiores rem, nobis vitae perspiciatis! Ex quia veritatis impedit neque voluptatibus aperiam est illo. Delectus autem enim odio facere, quo distinctio optio aut laboriosam maxime rerum, soluta sint. Pariatur.</p>
+		</div>
+-->
+
+
+    <!--
+    <audio class="audio" autoplay controls loop>
+         <source src="music.ogg" type="audio/ogg">
+         <source src="music/aaa.mp3" type="audio/mpeg">
+     </audio>
+-->
+
+
+</body>
+
+</html>

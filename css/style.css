@@ -1,0 +1,491 @@
+/* todo 加入Google font Roboto分別載入字重100,400,700
+字型放在css要用@import來作
+設計視覺的設定儘量都放在css中
+step 1*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+.audio {
+    /*    把audio的控制項目置中*/
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background: #555;
+}
+
+.nav-list > li {
+    float: left;
+    margin-right: 10px;
+    line-height: 50px;
+}
+
+.nav-list > li > a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-list > li > a.active,
+.nav-list > li > a:hover {
+    color: yellow;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.map {
+    display: none;
+}
+
+.map.mapActive {
+    display: block;
+}
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li {
+    /*    step 2 使用字體*/
+    /*不建議用*來選, 因為會與其他字體設定相衝突, 用一個一個的去選*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.first > p {
+    /*    font-family: 'Anton', sans-serif;*/
+    /*    font-family: 'Shrikhand', cursive;*/
+    font-family: "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+    /*
+    font-family: "malgun gothic", simhei;
+    font-family: "Microsoft YaHei";
+*/
+    color: saddlebrown;
+    font-size: 140%;
+    /*    font-weight: 900;*/
+    /*        font-style: italic;*/
+    font-weight: bold;
+}
+
+.second > p {
+    /*    margin-right: 4em;*/
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: 110%;
+    /*    font-style: italic;*/
+}
+
+.third > p,
+.test {
+    font-family: "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+    /*
+    font-family: "malgun gothic", simhei;
+    font-family: "Microsoft YaHei";
+*/
+    color: red;
+    font-size: 180%;
+    /*    font-style: italic;*/
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    /*------ note general ------*/
+    /*    step 4*/
+    /*    設定整個網頁的背景圖*/
+    /*    background-color: #1E3C4B;*/
+    background-image: url(../img/cork-repeat.jpg);
+    min-height: 1000px;
+}
+
+.card-wrapper {
+    /*    step 14*/
+    /*作成可透視*/
+    /*    數字是依感覺來設定, 沒有固定*/
+    perspective: 1000px;
+}
+
+.card {
+    width: 600px;
+    /*    原先的設定*/
+    /*    margin: 100px auto;*/
+    margin: 0px auto;
+}
+
+.card > .upper-section,
+.card > .lower-section {
+    padding: 20px 20px;
+    position: relative;
+}
+
+* {
+    /*------ note fonts ------*/
+    color: #333;
+}
+
+.dish-name {
+    font-size: 50px;
+    letter-spacing: 8px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin: 0
+}
+
+.upper-section {
+    /*------ note upper-section ------*/
+    background-color: white;
+    height: 350px;
+    z-index: 5;
+    color: white;
+    /*    step 3*/
+    /*    設定backgroung image*/
+    /*    background-image: url(../img/salmon-steak.jpg);*/
+    background-image: url(../img/M03494267_600_350.jpg);
+    background-repeat: no-repeat;
+    /*    覆蓋整個背景*/
+    background-size: cover;
+    /*    step 11*/
+    /* todo 設定filter屬性控制照片明亮與飽和度 */
+    /*    grayscale設定飽和度可以變黑白*/
+    /*    brightness default是1*/
+    /*    因為要折起來, 所以其亮度會大一些, 因此; 用filter來調整*/
+    filter: brightness(1.15) grayscale(10%);
+    /*    給Z軸其圖片會旋轉*/
+    /*    transform: rotateZ(45deg)*/
+    /*    把menu折起來, 先把上半部折一個小角度*/
+    /*    用rotateX是因為menu要上往下折一個角度*/
+    transform: rotateX(15deg);
+    /*    把圖片旋轉軸心換到bottom*/
+    transform-origin: bottom;
+}
+
+.upper-section .text {
+    margin-top: 80px;
+}
+
+.upper-section * {
+    color: white;
+}
+
+.upper-section p {
+    margin: 0;
+}
+
+.price {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /*    step 15*/
+    /*    透明度*/
+    /*    一開始price要完全看不到*/
+    /*    op0*/
+    opacity: 0;
+}
+
+.price:before {
+    /*    step 9*/
+    /*在price前加入相關的文字*/
+    content: "$";
+    /*    以下是與加空格相當*/
+    margin-right: 8px;
+}
+
+.price:after {
+    /*    step 10*/
+    /*在price後加入相關的文字*/
+    content: "NTD";
+    margin-left: 8px;
+}
+
+.lower-section {
+    /*------ note lower-section ------*/
+    background-color: white;
+    z-index: 1;
+    /*    因為往反方向折, 所以其角度要給負值*/
+    /*    若折成90度在透視後(step 14)會看到底部, 因此要設成-100deg*/
+    /*    用rotateX是因為下半部menu要下往上折一個角度*/
+    transform: rotateX(-130deg);
+    /*    把圖片軸心換到top*/
+    transform-origin: top;
+}
+
+.ingredients {
+    /*    把ul list點拿掉*/
+    list-style: none;
+    padding-left: 0;
+}
+
+.ingredients > li {
+    /*    在沒有設定width的情況下, 其預設width的大小是100%*/
+    height: 40px;
+    font-size: 18;
+    /*    用此把左邊的空間留下來, 為了放置check的勾勾*/
+    padding-left: 50px;
+    border-bottom: 1px dashed #dbdbdb;
+    position: relative;
+    /*    step 5*/
+    /*    文字垂直置中*/
+    line-height: 40px;
+    /*    setp 9*/
+    /*    作出mouse可以點擊的樣子*/
+    cursor: pointer;
+    /*    background: blue;*/
+}
+
+.ingredients > li.done {
+    /*    step 8*/
+    /*作出刪除線*/
+    text-decoration: line-through;
+}
+
+.ingredients > li:before {
+    /* 利用偽元素設計checklist點擊圖樣 */
+    /*    step 6*/
+    /*    一定要有content否則會不存在*/
+    content: "";
+    /*    inline沒有block慨念,因此要設為block*/
+    display: block;
+    /*    要給絕對定位, 要以.ingredients>li中的position來作為參考點*/
+    position: absolute;
+    /*    設定邊框與圓角*/
+    width: 28px;
+    height: 28px;
+    border: 1px dashed #dbdbdb;
+    /*    要在上面的.ingredients>li中的position有存在時,其left才會以li作為定位基礎*/
+    left: 8px;
+    /*    absolute元素垂直置中的方法*/
+    /*    方法1: top: 6px;*/
+    /*    方法2:*/
+    top: 0;
+    bottom: 0;
+    /*    以下設定width與height就可以隨意調整*/
+    /*    margin: auto 0;*/
+    margin-top: auto;
+    margin-bottom: auto;
+    /*    border-radius是新的設定要額外再給兩個前啜*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.ingredients > li.done:before {
+    /*    step 7*/
+    /*依據done的標籤來作出check的勾勾*/
+    background-image: url(../img/checked.svg);
+    background-repeat: no-repeat;
+    /*    水平置中*/
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------ note animation ------*/
+
+
+/* todo 設計.card:hover的3D動畫 */
+
+.upper-section,
+.lower-section,
+.price,
+.text {
+    /*    step 13*/
+    transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+}
+
+.card:hover > .upper-section,
+.card:hover > .lower-section {
+    /*作成動畫*/
+    /*    step 12*/
+    transform: rotateX(0deg);
+    /*    折回來時, 其明亮與飽和度要還原*/
+    filter: brightness(1) grayscale(0%);
+    /*	改成手形狀的cursor*/
+    cursor: pointer;
+}
+
+.showCard > .upper-section,
+.showCard > .lower-section {
+    /*作成動畫*/
+    /*    step 12*/
+    transform: rotateX(0deg);
+    /*    折回來時, 其明亮與飽和度要還原*/
+    filter: brightness(1) grayscale(0%);
+    /*	改成手形狀的cursor*/
+    cursor: pointer;
+}
+
+
+.card:hover .price {
+    /*用空格.prioce來選取price, 因為price在card以下的好幾層*/
+    /*    step 16*/
+    opacity: 1;
+}
+
+.card:hover .text {
+    /*用空格.text來選取text, 因為text在card以下的好幾層*/
+    /*    step 17*/
+    /*    字往下推100px*/
+    margin-top: 100px;
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 50px auto;
+    background: #555;
+}
+
+#page3 > h1,
+#page1 > h1 {
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* todo 設計.card:hover動畫 */
+
+
+/* todo 設計.card:hover的3D動畫 */
+
+
+/* note circle */
+
+
+/* todo 設計底圖擴散圓圈特效動畫 */
