@@ -24,6 +24,7 @@ step 1*/
 
 .nav-list > li {
     float: left;
+    font-size: 200%;
     margin-right: 10px;
     line-height: 50px;
 }
@@ -46,6 +47,8 @@ step 1*/
 .page.active {
     display: block;
 }
+
+
 
 
 
@@ -364,6 +367,8 @@ body {
 
 
 
+
+
 /*------ note animation ------*/
 
 
@@ -427,6 +432,8 @@ body {
     text-align: center;
     color: black;
 }
+
+
 
 
 
