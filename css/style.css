@@ -7,12 +7,107 @@ step 1*/
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
+.navbar {
+    /*    step 3*/
+    width: 100%;
+    height: 50px;
+    background: #555;
+    /*    用以下的設定, 把navbar固定在最上列*/
+    /*    step 28*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*    Z-index 可以用來設置元素的 Z 方向位置，z-index 數字越大的在越上面，反之則在越下面*/
+    z-index: 1000;
+}
+
+.navbar a {
+    /*    step 10*/
+    /*    navbar空格a, 去選取*/
+    /*    統一設定navbar中所有的a標籤*/
+    color: #ddd;
+    /*    去除底線*/
+    text-decoration: none;
+}
+
+.navbar-header {
+    /*    step 4*/
+    float: left;
+}
+
+.navbar-header > a {
+    /*    step 6*/
+    /*    以後這塊區域可能放圖片,把它設成區塊*/
+    display: block;
+    width: 200px;
+    height: 50px;
+    /*    水平置中*/
+    text-align: center;
+    /*    垂直置中*/
+    line-height: 50px;
+    /*    font-size: 20px;*/
+    font-size: 180%;
+    color: yellow;
+}
+
+.navbar-nav {
+    /*    step 5*/
+    float: right;
+    /*    step 7*/
+    /*    取消.*/
+    list-style: none;
+    /*    取消ul預設的padding & margin*/
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav > li {
+    /*    step 8*/
+    /*        用float的方式去排版其list選項*/
+    float: left;
+    /*    每個li都會有間隔*/
+    margin-right: 20px;
+    font-size: 200%;
+}
+
+.navbar-nav > li > a {
+    /*    step 9*/
+    /*    由顯示文字inline變成block*/
+    display: block;
+    height: 50px;
+    /*    垂直置中*/
+    line-height: 50px;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:hover {
+    color: yellow;
+}
+
 .audio {
     /*    把audio的控制項目置中*/
     display: block;
     margin: 0 auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .nav-list {
     list-style: none;
     padding: 0;
@@ -39,31 +134,16 @@ step 1*/
 .nav-list > li > a:hover {
     color: yellow;
 }
+*/
 
 .page {
+    margin-top: 80px;
     display: none;
 }
 
 .page.active {
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -343,32 +423,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------ note animation ------*/
 
 
@@ -423,7 +477,7 @@ body {
 #map {
     width: 80%;
     height: 400px;
-    margin: 50px auto;
+    margin: 0 auto;
     background: #555;
 }
 
@@ -432,6 +486,24 @@ body {
     text-align: center;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

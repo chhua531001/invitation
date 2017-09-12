@@ -61,12 +61,29 @@
 
 <body>
 
-    <nav class="nav-list">
-        <li><a class="active" data-target="#page1">同學會</a></li>
-        <li><a href="pages/page2.html">邀請函</a></li>
-        <li><a href="pages/page3.html">餐廳位置</a></li>
-        <!--<li><a data-target="#page4">Page4</a></li>-->
+    <nav class="navbar">
+        <!--       .navbar-header+ul.navbar-nav-->
+        <div class="navbar-header">
+            <!--           a{Brand}-->
+            <a href="#">76級 三年二班</a>
+        </div>
+        <ul class="navbar-nav">
+            <!--           ul中只能放li, 而li不能點擊, 因此要再加入a的link-->
+            <!--           li*4>a{Link$} $會自動生成順序-->
+            <li><a class="active" data-target="#page1">同學會</a></li>
+            <li><a href="pages/page2.html">邀請函</a></li>
+            <li><a href="pages/page3.html">餐廳位置</a></li>
+        </ul>
     </nav>
+
+    <!--
+<nav class="nav-list">
+    <li><a class="active" data-target="#page1">同學會</a></li>
+    <li><a href="pages/page2.html">邀請函</a></li>
+    <li><a href="pages/page3.html">餐廳位置</a></li>
+    <li><a data-target="#page4">Page4</a></li>
+</nav>
+-->
 
     <!--<div class="map" id="map"></div>-->
 
