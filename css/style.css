@@ -107,6 +107,7 @@ step 1*/
 
 
 
+
 /*
 .nav-list {
     list-style: none;
@@ -144,13 +145,6 @@ step 1*/
 .page.active {
     display: block;
 }
-
-
-
-
-
-
-
 
 
 
@@ -416,13 +410,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
 /*------ note animation ------*/
 
 
@@ -486,6 +473,7 @@ body {
     text-align: center;
     color: black;
 }
+
 
 
 
